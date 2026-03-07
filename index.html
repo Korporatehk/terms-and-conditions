@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - 條款及細則</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        h1, h2, h3 { color: #333; }
+        .section { margin-bottom: 30px; }
+        .lang-toggle { text-align: center; margin-bottom: 20px; }
+        .lang-toggle a { margin: 0 10px; font-weight: bold; color: #007bff; text-decoration: none; }
+        .zh { display: block; }
+        .en { display: none; }
+        @media (max-width: 768px) { body { padding: 10px; } }
+    </style>
+</head>
+<body>
+    <div class="lang-toggle">
+        <a href="#" onclick="showLang('zh')">繁體中文</a> | 
+        <a href="#" onclick="showLang('en')">English</a>
+    </div>
+
+    <h1>條款及細則 / Terms and Conditions</h1>
+
+    <!-- 繁體中文版 -->
+    <div id="zh-content" class="zh">
+        <!-- 在此貼入完整繁體中文版Terms內容（從## 繁體中文版開始，到結束） -->
+        <div class="section">
+            <h2>付款條款</h2>
+            <ul>
+                <li>請於發票所示到期日前繳付全數款項。逾期付款將收取每日1%滯納金，直至清付為止。</li>
+                <li>所有付款須以港幣結算，並透過銀行轉帳、支票或指定電子支付方式進行。客戶須支付所有收款銀行所收取的相關銀行費用。</li>
+                <li>如服務費用以美元顯示，客戶須按發票所示匯率7.85（美元兌港幣）轉換為港幣支付。匯率以發票日期為準，概不接受其他匯率。</li>
+            </ul>
+        </div>
+        <!-- 繼續貼入所有其他條款...（完整內容見前文） -->
+        <p style="font-size: 0.8em; color: #666;">最後更新：2026年3月</p>
+    </div>
+
+    <!-- English Version -->
+    <div id="en-content" class="en">
+        <!-- 在此貼入完整英文版Terms內容（從## English Version開始，到結束） -->
+        <div class="section">
+            <h2>Payment Terms</h2>
+            <ul>
+                <li>Full payment must be made by the due date specified on the invoice. Late payments will incur a 1% daily late fee until full settlement.</li>
+                <li>All payments must be made in Hong Kong Dollars via bank transfer, cheque, or designated electronic payment methods. The client shall bear all related bank charges incurred by the receiving bank.</li>
+                <li>If service fees are quoted in USD, the client must convert to HKD at the exchange rate of 7.85 (USD to HKD) as specified on the invoice. The exchange rate is fixed at the invoice date and no other rates will be accepted.</li>
+            </ul>
+        </div>
+        <!-- 繼續貼入所有其他條款... -->
+        <p style="font-size: 0.8em; color: #666;">Last Updated: March 2026</p>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            if (lang === 'zh') {
+                document.getElementById('zh-content').style.display = 'block';
+                document.getElementById('en-content').style.display = 'none';
+            } else {
+                document.getElementById('zh-content').style.display = 'none';
+                document.getElementById('en-content').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
